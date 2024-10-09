@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "avengers",
+	"version": "${version}",
+	"name": "Avengers",
+	"description": "This is a recreation of the Avengers datapack as a mod.",
+	"authors": [
+		"JK0011GaMiNgG"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/avengers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jkgamingg.avengers.Avengers"
+		],
+		"client": [
+			"net.jkgamingg.avengers.AvengersClient"
+		],
+		"fabric-datagen": [
+			"net.jkgamingg.avengers.AvengersDataGenerator"
+		]
+	},
+	"mixins": [
+		"avengers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
